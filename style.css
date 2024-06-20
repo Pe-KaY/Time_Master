@@ -1,0 +1,79 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: monospace;
+}
+
+h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+#container {
+  width: 40rem;
+  height: 20rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.539);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__time {
+  width: 90%;
+  height: 10rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+}
+#ampm {
+  font-size: 2rem;
+}
+
+.clock__switchmode {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+i {
+  cursor: pointer;
+  animation: animate 2s ease-in-out 4s;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* switch time format button animation */
+@keyframes animate {
+  to {
+    transform: rotate(360deg);
+  }
+}
