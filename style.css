@@ -64,11 +64,14 @@ h1 {
 
 i {
   cursor: pointer;
-  animation: animate 2s ease-in-out 4s;
 }
 
 p {
   font-size: 1rem;
+}
+
+.anim {
+  animation: animate 2s ease-in-out 4s;
 }
 
 /* switch time format button animation */
