@@ -37,6 +37,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .clock__time {
@@ -68,6 +69,11 @@ i {
 
 p {
   font-size: 1rem;
+}
+
+#color {
+  position: absolute;
+  bottom: 0;
 }
 
 .anim {

@@ -4,6 +4,7 @@ const clock = () => {
   const amPm = document.getElementById("ampm")
   const switchBtn = document.getElementById("switchBtn")
   const timeFormatName = document.querySelector("p")
+  const color = document.getElementById("ink")
 
   // will be used to toggle between 12 and 24 hour format
   let istwelveHour = true
@@ -57,6 +58,12 @@ const clock = () => {
   // add event to switch format btn
   switchBtn.addEventListener("click", () => {
     istwelveHour = !istwelveHour
+  })
+
+  // color
+  color.addEventListener("change", () => {
+    displayTime.style.color = `${color.value}`
+    amPm.style.color = `${color.value}`
   })
 }
 
